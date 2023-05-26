@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+/* ---------------------------------------- */
+nav {
+    display: flex;
+    height: 4vmax;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(117, 112, 112);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.left {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.left>a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 2vmax;
+    color: crimson;
+}
+
+.mid {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: stretch;
+}
+
+.mid>a {
+    text-decoration: none;
+    color: rgb(42, 37, 37);
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid>a:hover {
+    border-bottom: 2px solid crimson;
+    color: crimson;
+}
+
+.right {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.right>img {
+    width: 2.5vmax;
+    margin: 1vmax;
+}
+
+/* --------------------------------------------------- */
+
+.home {
+    display: flex;
+    height: 90vh;
+    background-image: radial-gradient(white, rgb(184, 184, 223));
+}
+
+.container {
+    width: 100%;
+}
+
+#rightContainer {
+    background-image: url("images/home.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* @media all and (max-width:390px) {
+    #rightContainer {
+        display: block;
+        margin-top: 17.5vmax;
+    }
+} */
+
+#rightContainer>img {
+    margin-right: 8vmax;
+    filter: drop-shadow(0 0 20px rgb(185, 131, 207));
+    border-radius: 1vmax;
+    margin-top: 2vmax;
+}
+
+#leftContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 3vmax;
+    justify-content: center;
+}
+
+#leftContainer>h1 {
+    font-size: 5vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#leftContainer>h2 {
+    margin-top: -8%;
+    font-size: 2vmax;
+    font-family: sans-serif;
+}
+
+#leftContainer>p {
+    margin-left: 2%;
+    font-size: 1.2vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#leftContainer>button {
+    margin-left: 2%;
+    border: none;
+    border-radius: 2vmax;
+    width: 11vmax;
+    padding: 0.6vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+}
+
+#leftContainer>button:hover {
+    background-color: rgb(151, 32, 56);
+}
+
+/* -------------------------------- */
+
+#products>h1 {
+    text-align: center;
+    width: 25vw;
+    margin: 5vmax auto;
+    border-bottom: 4px solid crimson;
+    padding: 1vmax;
+}
+
+.productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 80vw;
+    margin: auto;
+}
+
+.product {
+    display: flex;
+    transition: all 0.3s;
+    cursor: pointer;
+    height: 30vmax;
+    flex-direction: column;
+    /* img name & price in col */
+    align-items: center;
+    margin: 1vmax;
+}
+
+.product>img {
+    display: flex;
+    width: 20vmax;
+}
+
+.product>h4 {
+    margin: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.product>h5 {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+/* -------------------------------------- */
+
+footer {
+    margin-top: 8vmax;
+    display: flex;
+    /*for div to come in row*/
+    color: white;
+    background-color: rgb(40, 37, 37);
+    padding: 2vmax;
+    align-items: center;
+}
+
+.leftFooter {
+    width: 20%;
+    display: flex;
+    /*for contents to come in column and use align items*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.leftFooter,
+.rightFooter>h4 {
+    font-size: 1.6vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.leftFooter>p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 1.1vmax;
+}
+
+.leftFooter>img {
+    width: 10vmax;
+    margin: 0.6vmax;
+    cursor: pointer;
+}
+
+.midFooter {
+    width: 60%;
+    text-align: center;
+}
+
+.midFooter>h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5vmax;
+    color: crimson;
+}
+
+.midFooter>p {
+    max-width: 60%;
+    margin: 1vmax auto;
+}
+
+.rightFooter {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightFooter>a {
+    text-decoration: none;
+    color: white;
+    margin: 1vmax;
+    font-size: 1.1vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.rightFooter>a:hover {
+    color: crimson;
+}
